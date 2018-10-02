@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[常用软件]]></title>
+    <url>%2F2018%2F10%2F02%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[一、Q-Dir 6.67.1 Q-Dir特别适用于频繁在各个目录间跳跃复制粘贴的情况。因为Q-Dir有 4 个窗口！每个窗口都可以方便的切换目录，以不同颜色区分不同类型的文件，各窗口之间可以方便的拖放操作互相的文件。]]></content>
+      <categories>
+        <category>常用软件</category>
+      </categories>
+      <tags>
+        <tag>Q-Dir</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F10%2F02%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
