@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[鸡汤-20181002]]></title>
+    <title><![CDATA[网络鸡汤]]></title>
     <url>%2F2018%2F10%2F02%2F%E5%BF%83%E7%81%B5%E9%B8%A1%E6%B1%A4%2F2018.10.02%2F</url>
     <content type="text"><![CDATA[有些路很远，走下去会很累。可是，不走，会后悔。 所以，别忘了答应自己要做的事情，别忘了答应自己要去的地方，无论有多难，有多远。]]></content>
       <categories>
@@ -13,13 +13,14 @@
   </entry>
   <entry>
     <title><![CDATA[常用软件]]></title>
-    <url>%2F2018%2F10%2F02%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[一、Q-Dir 6.67.1 Q-Dir特别适用于频繁在各个目录间跳跃复制粘贴的情况。因为Q-Dir有 4 个窗口！每个窗口都可以方便的切换目录，以不同颜色区分不同类型的文件，各窗口之间可以方便的拖放操作互相的文件。]]></content>
+    <url>%2F2018%2F10%2F02%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[一、Q-Dir 6.67.1 Q-Dir特别适用于频繁在各个目录间跳跃复制粘贴的情况。因为Q-Dir有 4 个窗口！每个窗口都可以方便的切换目录，以不同颜色区分不同类型的文件，各窗口之间可以方便的拖放操作互相的文件。 二、Bookmark本人编写的用于存储电脑浏览器书签的应用程序Bookmark。]]></content>
       <categories>
         <category>常用软件</category>
       </categories>
       <tags>
         <tag>Q-Dir</tag>
+        <tag>Bookmark</tag>
       </tags>
   </entry>
 </search>
