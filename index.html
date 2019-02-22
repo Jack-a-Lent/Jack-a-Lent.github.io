@@ -286,6 +286,149 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jack-a-lent.github.io/2019/02/22/SIMetrix仿真/SIMetrix瞬态分析、DC分析、AC分析、参数扫描/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack-a-Lent">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/22/SIMetrix仿真/SIMetrix瞬态分析、DC分析、AC分析、参数扫描/" itemprop="url">SIMetrix瞬态分析、DC分析、AC分析、参数扫描</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-22T20:30:00+08:00">
+                2019-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SIMetrix/" itemprop="url" rel="index">
+                    <span itemprop="name">SIMetrix</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="一、SIMetrix-SIMPLIS"><a href="#一、SIMetrix-SIMPLIS" class="headerlink" title="一、SIMetrix-SIMPLIS"></a>一、<a href="https://www.simetrix.co.uk" target="_blank" rel="noopener">SIMetrix-SIMPLIS</a></h2><p>SIMetrix的SIMPLIS那些事儿。<br><img src="/images/20190222/SIMetrix0000.png" alt="&quot;SIMetrix-SIMPLIS&quot;"></p>
+<h2 id="二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描"><a href="#二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描" class="headerlink" title="二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描"></a>二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描</h2><p>1.首先建立一个RC 低通滤波电路如下图。<br><img src="/images/20190222/SIMetrix0001.png" alt="&quot;SIMetrix0001&quot;"><br><img src="/images/20190222/SIMetrix0002.png" alt="&quot;SIMetrix0002&quot;"><br><img src="/images/20190222/SIMetrix0003.png" alt="&quot;SIMetrix0003&quot;"><br><img src="/images/20190222/SIMetrix0004.png" alt="&quot;SIMetrix0004&quot;"><br>2.V1是5V电源，把Enable AC也选中，表示V1同时也是个频率源，允许进行AC分析。<br><img src="/images/20190222/SIMetrix0005.png" alt="&quot;SIMetrix0005&quot;"><br>3.R1是1K电阻，C1是电容，把电容初始电压设置为0，如下图。<br><img src="/images/20190222/SIMetrix0006.png" alt="&quot;SIMetrix0006&quot;"><br>4.在RC之间放置一个电压探头，按快捷键B，也可以从菜单Place—Probe—Voltage Probe。<br><img src="/images/20190222/SIMetrix0007.png" alt="&quot;SIMetrix0007&quot;"><br>5.点Simulator——Choose Analysis,进行分析设置，如下图。<br><img src="/images/20190222/SIMetrix0008.png" alt="&quot;SIMetrix0008&quot;"><br>6.勾选中Transient和AC, 在Transient栏中 Stop time设置10ms,表示仿真时间为10ms。<br>7.点Advanced Options键可以设置步长，步长时间越小越精确，但是速度也越慢，这里设置步长为20us。<br><img src="/images/20190222/SIMetrix0009.png" alt="&quot;SIMetrix0009&quot;"><br>8.然后在AC栏设置一下AC分析的起始扫描频率和终止频率，就可以进行分析了。<br><img src="/images/20190222/SIMetrix0010.png" alt="&quot;SIMetrix0010&quot;"><br>9.鼠标点击Run，或者点OK后按F9运行分析。<br><img src="/images/20190222/SIMetrix0011.png" alt="&quot;SIMetrix0011&quot;"><br>10.瞬态分析的结果如下图，可以看到测试点电压是慢慢升起来的<br><img src="/images/20190222/SIMetrix0012.png" alt="&quot;SIMetrix0011&quot;"><br>11.AC分析结果如下图，可以看到增益刚开始是1，大约100HZ以后开始往下掉了。<br><img src="/images/20190222/SIMetrix0013.png" alt="&quot;SIMetrix0011&quot;"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://jack-a-lent.github.io/2018/10/02/心灵鸡汤/2018.10.02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -608,7 +751,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -619,7 +762,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -630,7 +773,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -667,7 +810,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

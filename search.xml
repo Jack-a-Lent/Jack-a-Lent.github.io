@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[SIMetrix瞬态分析、DC分析、AC分析、参数扫描]]></title>
+    <url>%2F2019%2F02%2F22%2FSIMetrix%E4%BB%BF%E7%9C%9F%2FSIMetrix%E7%9E%AC%E6%80%81%E5%88%86%E6%9E%90%E3%80%81DC%E5%88%86%E6%9E%90%E3%80%81AC%E5%88%86%E6%9E%90%E3%80%81%E5%8F%82%E6%95%B0%E6%89%AB%E6%8F%8F%2F</url>
+    <content type="text"><![CDATA[一、SIMetrix-SIMPLISSIMetrix的SIMPLIS那些事儿。 二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描1.首先建立一个RC 低通滤波电路如下图。2.V1是5V电源，把Enable AC也选中，表示V1同时也是个频率源，允许进行AC分析。3.R1是1K电阻，C1是电容，把电容初始电压设置为0，如下图。4.在RC之间放置一个电压探头，按快捷键B，也可以从菜单Place—Probe—Voltage Probe。5.点Simulator——Choose Analysis,进行分析设置，如下图。6.勾选中Transient和AC, 在Transient栏中 Stop time设置10ms,表示仿真时间为10ms。7.点Advanced Options键可以设置步长，步长时间越小越精确，但是速度也越慢，这里设置步长为20us。8.然后在AC栏设置一下AC分析的起始扫描频率和终止频率，就可以进行分析了。9.鼠标点击Run，或者点OK后按F9运行分析。10.瞬态分析的结果如下图，可以看到测试点电压是慢慢升起来的11.AC分析结果如下图，可以看到增益刚开始是1，大约100HZ以后开始往下掉了。]]></content>
+      <categories>
+        <category>SIMetrix</category>
+      </categories>
+      <tags>
+        <tag>SIMetrix</tag>
+        <tag>瞬态分析</tag>
+        <tag>DC分析</tag>
+        <tag>AC分析</tag>
+        <tag>参数扫描</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[网络鸡汤]]></title>
     <url>%2F2018%2F10%2F02%2F%E5%BF%83%E7%81%B5%E9%B8%A1%E6%B1%A4%2F2018.10.02%2F</url>
     <content type="text"><![CDATA[有些路很远，走下去会很累。可是，不走，会后悔。 所以，别忘了答应自己要做的事情，别忘了答应自己要去的地方，无论有多难，有多远。]]></content>
