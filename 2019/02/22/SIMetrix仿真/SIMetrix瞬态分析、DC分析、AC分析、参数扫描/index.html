@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="一、SIMetrix-SIMPLISSIMetrix的SIMPLIS那些事儿。 二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描1.首先建立一个RC 低通滤波电路如下图。2.V1是5V电源，把Enable AC也选中，表示V1同时也是个频率源，允许进行AC分析。3.R1是1K电阻，C1是电容，把电容初始电压设置为0，如下图。4.在RC之间放置一个电压探头，按快捷键B，也可以从菜单Plac">
+<meta name="description" content="SIMetrix-SIMPLISSIMetrix的SIMPLIS那些事儿。">
 <meta name="keywords" content="SIMetrix,瞬态分析,DC分析,AC分析,参数扫描">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SIMetrix瞬态分析、DC分析、AC分析、参数扫描">
 <meta property="og:url" content="https://jack-a-lent.github.io/2019/02/22/SIMetrix仿真/SIMetrix瞬态分析、DC分析、AC分析、参数扫描/index.html">
 <meta property="og:site_name" content="笔记">
-<meta property="og:description" content="一、SIMetrix-SIMPLISSIMetrix的SIMPLIS那些事儿。 二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描1.首先建立一个RC 低通滤波电路如下图。2.V1是5V电源，把Enable AC也选中，表示V1同时也是个频率源，允许进行AC分析。3.R1是1K电阻，C1是电容，把电容初始电压设置为0，如下图。4.在RC之间放置一个电压探头，按快捷键B，也可以从菜单Plac">
+<meta property="og:description" content="SIMetrix-SIMPLISSIMetrix的SIMPLIS那些事儿。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://jack-a-lent.github.io/images/20190222/SIMetrix0000.png">
 <meta property="og:image" content="https://jack-a-lent.github.io/images/20190222/SIMetrix0001.png">
@@ -101,10 +101,10 @@
 <meta property="og:image" content="https://jack-a-lent.github.io/images/20190222/SIMetrix0011.png">
 <meta property="og:image" content="https://jack-a-lent.github.io/images/20190222/SIMetrix0012.png">
 <meta property="og:image" content="https://jack-a-lent.github.io/images/20190222/SIMetrix0013.png">
-<meta property="og:updated_time" content="2019-02-22T13:18:48.856Z">
+<meta property="og:updated_time" content="2019-02-22T14:13:05.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SIMetrix瞬态分析、DC分析、AC分析、参数扫描">
-<meta name="twitter:description" content="一、SIMetrix-SIMPLISSIMetrix的SIMPLIS那些事儿。 二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描1.首先建立一个RC 低通滤波电路如下图。2.V1是5V电源，把Enable AC也选中，表示V1同时也是个频率源，允许进行AC分析。3.R1是1K电阻，C1是电容，把电容初始电压设置为0，如下图。4.在RC之间放置一个电压探头，按快捷键B，也可以从菜单Plac">
+<meta name="twitter:description" content="SIMetrix-SIMPLISSIMetrix的SIMPLIS那些事儿。">
 <meta name="twitter:image" content="https://jack-a-lent.github.io/images/20190222/SIMetrix0000.png">
 
 
@@ -391,8 +391,8 @@
       
 
       
-        <h2 id="一、SIMetrix-SIMPLIS"><a href="#一、SIMetrix-SIMPLIS" class="headerlink" title="一、SIMetrix-SIMPLIS"></a>一、<a href="https://www.simetrix.co.uk" target="_blank" rel="noopener">SIMetrix-SIMPLIS</a></h2><p>SIMetrix的SIMPLIS那些事儿。<br><img src="/images/20190222/SIMetrix0000.png" alt="&quot;SIMetrix-SIMPLIS&quot;"></p>
-<h2 id="二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描"><a href="#二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描" class="headerlink" title="二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描"></a>二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描</h2><p>1.首先建立一个RC 低通滤波电路如下图。<br><img src="/images/20190222/SIMetrix0001.png" alt="&quot;SIMetrix0001&quot;"><br><img src="/images/20190222/SIMetrix0002.png" alt="&quot;SIMetrix0002&quot;"><br><img src="/images/20190222/SIMetrix0003.png" alt="&quot;SIMetrix0003&quot;"><br><img src="/images/20190222/SIMetrix0004.png" alt="&quot;SIMetrix0004&quot;"><br>2.V1是5V电源，把Enable AC也选中，表示V1同时也是个频率源，允许进行AC分析。<br><img src="/images/20190222/SIMetrix0005.png" alt="&quot;SIMetrix0005&quot;"><br>3.R1是1K电阻，C1是电容，把电容初始电压设置为0，如下图。<br><img src="/images/20190222/SIMetrix0006.png" alt="&quot;SIMetrix0006&quot;"><br>4.在RC之间放置一个电压探头，按快捷键B，也可以从菜单Place—Probe—Voltage Probe。<br><img src="/images/20190222/SIMetrix0007.png" alt="&quot;SIMetrix0007&quot;"><br>5.点Simulator——Choose Analysis,进行分析设置，如下图。<br><img src="/images/20190222/SIMetrix0008.png" alt="&quot;SIMetrix0008&quot;"><br>6.勾选中Transient和AC, 在Transient栏中 Stop time设置10ms,表示仿真时间为10ms。<br>7.点Advanced Options键可以设置步长，步长时间越小越精确，但是速度也越慢，这里设置步长为20us。<br><img src="/images/20190222/SIMetrix0009.png" alt="&quot;SIMetrix0009&quot;"><br>8.然后在AC栏设置一下AC分析的起始扫描频率和终止频率，就可以进行分析了。<br><img src="/images/20190222/SIMetrix0010.png" alt="&quot;SIMetrix0010&quot;"><br>9.鼠标点击Run，或者点OK后按F9运行分析。<br><img src="/images/20190222/SIMetrix0011.png" alt="&quot;SIMetrix0011&quot;"><br>10.瞬态分析的结果如下图，可以看到测试点电压是慢慢升起来的<br><img src="/images/20190222/SIMetrix0012.png" alt="&quot;SIMetrix0011&quot;"><br>11.AC分析结果如下图，可以看到增益刚开始是1，大约100HZ以后开始往下掉了。<br><img src="/images/20190222/SIMetrix0013.png" alt="&quot;SIMetrix0011&quot;"></p>
+        <h2 id="SIMetrix-SIMPLIS"><a href="#SIMetrix-SIMPLIS" class="headerlink" title="SIMetrix-SIMPLIS"></a><a href="https://www.simetrix.co.uk" target="_blank" rel="noopener">SIMetrix-SIMPLIS</a></h2><p>SIMetrix的SIMPLIS那些事儿。<br><img src="/images/20190222/SIMetrix0000.png" alt="&quot;SIMetrix-SIMPLIS&quot;"><br><a id="more"></a></p>
+<h2 id="SIMetrix瞬态分析、DC分析、AC分析、参数扫描"><a href="#SIMetrix瞬态分析、DC分析、AC分析、参数扫描" class="headerlink" title="SIMetrix瞬态分析、DC分析、AC分析、参数扫描"></a>SIMetrix瞬态分析、DC分析、AC分析、参数扫描</h2><p>1.首先建立一个RC 低通滤波电路如下图。<br><img src="/images/20190222/SIMetrix0001.png" alt="&quot;SIMetrix0001&quot;"><br><img src="/images/20190222/SIMetrix0002.png" alt="&quot;SIMetrix0002&quot;"><br><img src="/images/20190222/SIMetrix0003.png" alt="&quot;SIMetrix0003&quot;"><br><img src="/images/20190222/SIMetrix0004.png" alt="&quot;SIMetrix0004&quot;"><br>2.V1是5V电源，把Enable AC也选中，表示V1同时也是个频率源，允许进行AC分析。<br><img src="/images/20190222/SIMetrix0005.png" alt="&quot;SIMetrix0005&quot;"><br>3.R1是1K电阻，C1是电容，把电容初始电压设置为0，如下图。<br><img src="/images/20190222/SIMetrix0006.png" alt="&quot;SIMetrix0006&quot;"><br>4.在RC之间放置一个电压探头，按快捷键B，也可以从菜单Place—Probe—Voltage Probe。<br><img src="/images/20190222/SIMetrix0007.png" alt="&quot;SIMetrix0007&quot;"><br>5.点Simulator——Choose Analysis,进行分析设置，如下图。<br><img src="/images/20190222/SIMetrix0008.png" alt="&quot;SIMetrix0008&quot;"><br>6.勾选中Transient和AC, 在Transient栏中 Stop time设置10ms,表示仿真时间为10ms。<br>7.点Advanced Options键可以设置步长，步长时间越小越精确，但是速度也越慢，这里设置步长为20us。<br><img src="/images/20190222/SIMetrix0009.png" alt="&quot;SIMetrix0009&quot;"><br>8.然后在AC栏设置一下AC分析的起始扫描频率和终止频率，就可以进行分析了。<br><img src="/images/20190222/SIMetrix0010.png" alt="&quot;SIMetrix0010&quot;"><br>9.鼠标点击Run，或者点OK后按F9运行分析。<br><img src="/images/20190222/SIMetrix0011.png" alt="&quot;SIMetrix0011&quot;"><br>10.瞬态分析的结果如下图，可以看到测试点电压是慢慢升起来的<br><img src="/images/20190222/SIMetrix0012.png" alt="&quot;SIMetrix0011&quot;"><br>11.AC分析结果如下图，可以看到增益刚开始是1，大约100HZ以后开始往下掉了。<br><img src="/images/20190222/SIMetrix0013.png" alt="&quot;SIMetrix0011&quot;"></p>
 
       
     </div>
@@ -604,7 +604,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、SIMetrix-SIMPLIS"><span class="nav-number">1.</span> <span class="nav-text">一、SIMetrix-SIMPLIS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描"><span class="nav-number">2.</span> <span class="nav-text">二、SIMetrix瞬态分析、DC分析、AC分析、参数扫描</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SIMetrix-SIMPLIS"><span class="nav-number">1.</span> <span class="nav-text">SIMetrix-SIMPLIS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SIMetrix瞬态分析、DC分析、AC分析、参数扫描"><span class="nav-number">2.</span> <span class="nav-text">SIMetrix瞬态分析、DC分析、AC分析、参数扫描</span></a></li></ol></div>
             
 
           </div>
