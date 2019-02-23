@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[SIMetrix 仿真一阶RC滤波器的波特图]]></title>
+    <url>%2F2019%2F02%2F23%2FSIMetrix%E4%BB%BF%E7%9C%9F%2FSIMetrix%20%E4%B8%80%E9%98%B6RC%E6%BB%A4%E6%B3%A2%E5%99%A8%E7%9A%84%E6%B3%A2%E7%89%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[一阶RC滤波器的波特图 SIMetrix 仿真一阶RC滤波器的波特图1.一阶RC滤波器知识回顾。2.放置器件。2.设置里参数。3.运行结果如下。]]></content>
+      <categories>
+        <category>SIMetrix</category>
+      </categories>
+      <tags>
+        <tag>SIMetrix</tag>
+        <tag>波特图</tag>
+        <tag>Bode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SIMetrix仿真二极管伏安特性和三极管输出特性]]></title>
     <url>%2F2019%2F02%2F23%2FSIMetrix%E4%BB%BF%E7%9C%9F%2FSIMetrix%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%BC%8F%E5%AE%89%E7%89%B9%E6%80%A7%E4%BB%BF%E7%9C%9F%2F</url>
     <content type="text"><![CDATA[SIMetrix仿真二极管伏安特性和三极管输出特性 SIMetrix 仿真二极管伏安特性1.放置器件。2.在分析设置里勾选中DC Sweep，同时在DC栏目里设置如下。3.Start value设为-100，Stop value设为50，Number of points设为1K(表示描1000个点，越大越精确，也越慢)，Device name设为V1，表示要变化的源是V1，运行结果如下。4.Start value设为-0，Stop value设为800m，Number of points设为1K(表示描1000个点，越大越精确，也越慢)，Device name设为V1，表示要变化的源是V1，运行结果如下。 SIMetrix 仿真三极管输出特性1.放置器件。2.在分析设置里勾选中DC Sweep，同时在DC栏目里设置如下。3.运行结果如下。]]></content>
