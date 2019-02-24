@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[SIMetrix 仿真开环Buck]]></title>
+    <url>%2F2019%2F02%2F24%2FSIMetrix%E4%BB%BF%E7%9C%9F%2FSIMetrix%20%E4%BB%BF%E7%9C%9F%E5%BC%80%E7%8E%AFBuck%2F</url>
+    <content type="text"><![CDATA[SIMetrix 仿真开环Buck SIMetrix 仿真开环Buck1.放置器件。2.设置参数。3.运行结果如下。]]></content>
+      <categories>
+        <category>SIMetrix</category>
+      </categories>
+      <tags>
+        <tag>SIMetrix</tag>
+        <tag>Buck</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SIMetrix 仿真一阶RC滤波器的波特图]]></title>
     <url>%2F2019%2F02%2F23%2FSIMetrix%E4%BB%BF%E7%9C%9F%2FSIMetrix%20%E4%B8%80%E9%98%B6RC%E6%BB%A4%E6%B3%A2%E5%99%A8%E7%9A%84%E6%B3%A2%E7%89%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[一阶RC滤波器的波特图 SIMetrix 仿真一阶RC滤波器的波特图1.一阶RC滤波器知识回顾。2.放置器件。2.设置里参数。3.运行结果如下。]]></content>
+    <content type="text"><![CDATA[一阶RC滤波器的波特图 SIMetrix 仿真一阶RC滤波器的波特图1.一阶RC滤波器知识回顾。2.放置器件。2.设置参数。3.运行结果如下。]]></content>
       <categories>
         <category>SIMetrix</category>
       </categories>
