@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="SIMPLIS,Buck,POP," />
 
 
 
@@ -79,16 +79,30 @@
 
 
 
-<meta name="description" content="本人在此发布的博文（包括但不限于汉字、拼音、阿拉伯字母、图片、影像，以及前述之各种任意组合等等）均为互联网整理而来，仅供学习参考，如果侵犯了你的权益请发送电子邮件联系我，我会尽快处理你的问题。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="笔记">
-<meta property="og:url" content="https://jack-a-lent.github.io/archives/2019/index.html">
+<meta name="description" content="SIMPLIS 仿真开环Buck和POP分析实际上SIMetrix/SIMLIS包含SIMetrix和SIMLIS两个仿真内核，SIMetrix是用的PSPICE内核，而SIMLIS是一个基于分段线性元件建立的内核，所以速度更快，可以直接找到开关电路的稳定工作点，可以不用平均模型，直接从原理图上得到传递函数。">
+<meta name="keywords" content="SIMPLIS,Buck,POP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SIMPLIS 仿真开环Buck和POP分析">
+<meta property="og:url" content="https://jack-a-lent.github.io/2019/02/24/SIMetrix仿真/SIMPLIS 仿真开环Buck和POP分析/index.html">
 <meta property="og:site_name" content="笔记">
-<meta property="og:description" content="本人在此发布的博文（包括但不限于汉字、拼音、阿拉伯字母、图片、影像，以及前述之各种任意组合等等）均为互联网整理而来，仅供学习参考，如果侵犯了你的权益请发送电子邮件联系我，我会尽快处理你的问题。">
+<meta property="og:description" content="SIMPLIS 仿真开环Buck和POP分析实际上SIMetrix/SIMLIS包含SIMetrix和SIMLIS两个仿真内核，SIMetrix是用的PSPICE内核，而SIMLIS是一个基于分段线性元件建立的内核，所以速度更快，可以直接找到开关电路的稳定工作点，可以不用平均模型，直接从原理图上得到传递函数。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image012.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image008.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image009.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image010.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image011.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image012.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image013.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image014.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image015.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image016.png">
+<meta property="og:image" content="https://jack-a-lent.github.io/images/20190224/Image017.png">
+<meta property="og:updated_time" content="2019-02-24T11:40:16.811Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笔记">
-<meta name="twitter:description" content="本人在此发布的博文（包括但不限于汉字、拼音、阿拉伯字母、图片、影像，以及前述之各种任意组合等等）均为互联网整理而来，仅供学习参考，如果侵犯了你的权益请发送电子邮件联系我，我会尽快处理你的问题。">
+<meta name="twitter:title" content="SIMPLIS 仿真开环Buck和POP分析">
+<meta name="twitter:description" content="SIMPLIS 仿真开环Buck和POP分析实际上SIMetrix/SIMLIS包含SIMetrix和SIMLIS两个仿真内核，SIMetrix是用的PSPICE内核，而SIMLIS是一个基于分段线性元件建立的内核，所以速度更快，可以直接找到开关电路的稳定工作点，可以不用平均模型，直接从原理图上得到传递函数。">
+<meta name="twitter:image" content="https://jack-a-lent.github.io/images/20190224/Image012.png">
 
 
 
@@ -118,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="https://jack-a-lent.github.io/archives/2019/"/>
+  <link rel="canonical" href="https://jack-a-lent.github.io/2019/02/24/SIMetrix仿真/SIMPLIS 仿真开环Buck和POP分析/"/>
 
 
 
 
 
-  <title>归档 | 笔记</title>
+  <title>SIMPLIS 仿真开环Buck和POP分析 | 笔记</title>
   
 
 
@@ -143,7 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -271,222 +285,204 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jack-a-lent.github.io/2019/02/24/SIMetrix仿真/SIMPLIS 仿真开环Buck和POP分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack-a-Lent">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="笔记">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">SIMPLIS 仿真开环Buck和POP分析</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-24T19:25:00+08:00">
+                2019-02-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SIMetrix/" itemprop="url" rel="index">
+                    <span itemprop="name">SIMetrix</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/24/SIMetrix仿真/SIMPLIS 仿真开环Buck和POP分析/" itemprop="url">
-              
-                <span itemprop="name">SIMPLIS 仿真开环Buck和POP分析</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-02-24T19:25:00+08:00"
-              content="2019-02-24" >
-          02-24
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/24/SIMetrix仿真/SIMetrix 仿真开环Buck/" itemprop="url">
-              
-                <span itemprop="name">SIMetrix 仿真开环Buck</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-02-24T16:25:00+08:00"
-              content="2019-02-24" >
-          02-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/23/SIMetrix仿真/SIMetrix 一阶RC滤波器的波特图/" itemprop="url">
-              
-                <span itemprop="name">SIMetrix 仿真一阶RC滤波器的波特图</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-02-23T19:30:00+08:00"
-              content="2019-02-23" >
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="SIMPLIS-仿真开环Buck和POP分析"><a href="#SIMPLIS-仿真开环Buck和POP分析" class="headerlink" title="SIMPLIS 仿真开环Buck和POP分析"></a>SIMPLIS 仿真开环Buck和POP分析</h1><p>实际上SIMetrix/SIMLIS包含SIMetrix和SIMLIS两个仿真内核，SIMetrix是用的PSPICE内核，而SIMLIS是一个基于分段线性元件建立的内核，所以速度更快，可以直接找到开关电路的稳定工作点，可以不用平均模型，直接从原理图上得到传递函数。<br><img src="/images/20190224/Image012.png" alt="&quot;Image012.png&quot;"><br><a id="more"></a></p>
+<h2 id="SIMPLIS-仿真开环Buck"><a href="#SIMPLIS-仿真开环Buck" class="headerlink" title="SIMPLIS 仿真开环Buck"></a>SIMPLIS 仿真开环Buck</h2><p>1.新建SIMPLIS Schematic并放置器件和设置器件参数。<br><img src="/images/20190224/Image008.png" alt="&quot;Image008.png&quot;"><br><img src="/images/20190224/Image009.png" alt="&quot;Image009.png&quot;"><br><img src="/images/20190224/Image010.png" alt="&quot;Image010.png&quot;"><br>2.运行结果如下。<br><img src="/images/20190224/Image011.png" alt="&quot;Image011.png&quot;"></p>
+<h2 id="SIMPLIS-POP分析"><a href="#SIMPLIS-POP分析" class="headerlink" title="SIMPLIS POP分析"></a>SIMPLIS POP分析</h2><p>POP分析(period operating point)是一种快速确定开关电源稳态工作的算法。如果不想看稳定的过程，直接看稳定后的结果，并且要得到VFB对输出的波特图，就要借助POP分析。首先要加入一个POP Trigger,就是图中的X1,必须加在有周期性信号的地方，比如图中的三角波发生器。要看波特图，要加入AC source（图中的V4）和波特图观察器（在Probe AC/Noise菜单可以找到）。<br>1.新建SIMPLIS Schematic并放置器件和设置器件参数。<br><img src="/images/20190224/Image012.png" alt="&quot;Image012.png&quot;"><br>2.POP Trigger 的放置参考下图红色框的提示。<br><img src="/images/20190224/Image013.png" alt="&quot;Image013.png&quot;"><br>3.在分析设置对话框中设置POP分析的参数，按下图勾选，Max.period时间要大于开关周期时间，比如本例开关频率为100K（V2的频率）,那么这个数就要大于10u,这里取50u。<br><img src="/images/20190224/Image014.png" alt="&quot;Image014.png&quot;"><br><img src="/images/20190224/Image015.png" alt="&quot;Image015.png&quot;"><br>3.运行结果如下。<br><img src="/images/20190224/Image016.png" alt="&quot;Image016.png&quot;"><br><img src="/images/20190224/Image017.png" alt="&quot;Image017.png&quot;"></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/23/SIMetrix仿真/SIMetrix二极管伏安特性仿真/" itemprop="url">
-              
-                <span itemprop="name">SIMetrix仿真二极管伏安特性和三极管输出特性</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-02-23T16:30:00+08:00"
-              content="2019-02-23" >
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/22/SIMetrix仿真/SIMetrix瞬态分析、DC分析、AC分析、参数扫描/" itemprop="url">
-              
-                <span itemprop="name">SIMetrix瞬态分析、DC分析、AC分析、参数扫描</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-02-22T20:30:00+08:00"
-              content="2019-02-22" >
-          02-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.jpg" alt="Jack-a-Lent 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.jpg" alt="Jack-a-Lent 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SIMPLIS/" rel="tag"># SIMPLIS</a>
+          
+            <a href="/tags/Buck/" rel="tag"># Buck</a>
+          
+            <a href="/tags/POP/" rel="tag"># POP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/24/SIMetrix仿真/SIMetrix 仿真开环Buck/" rel="next" title="SIMetrix 仿真开环Buck">
+                <i class="fa fa-chevron-left"></i> SIMetrix 仿真开环Buck
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -494,6 +490,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -514,8 +514,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -579,6 +588,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SIMPLIS-仿真开环Buck和POP分析"><span class="nav-number">1.</span> <span class="nav-text">SIMPLIS 仿真开环Buck和POP分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SIMPLIS-仿真开环Buck"><span class="nav-number">1.1.</span> <span class="nav-text">SIMPLIS 仿真开环Buck</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SIMPLIS-POP分析"><span class="nav-number">1.2.</span> <span class="nav-text">SIMPLIS POP分析</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -719,6 +744,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
