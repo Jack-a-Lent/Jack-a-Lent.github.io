@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[FlyBack工作原理简介工作原理简介]]></title>
+    <url>%2F2019%2F05%2F03%2F%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%2FFlyBack%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[FlyBack工作原理简介工作原理简介反激变换器是由Buck-Boost变换器延伸而来，其变压器本质上是一个耦合电感。电感按其电流是否连续分为电流不连续工作模式，电流连续模式，电流临界连续模式。因此反激变换器也可以按原边电流分为电流不连续(DCM)，电流连续(CCM)，电流临界连续(BCM)3种工作模式。]]></content>
+      <categories>
+        <category>电路原理</category>
+      </categories>
+      <tags>
+        <tag>FlyBack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Buck,Boost,Buck_Boost工作原理简介]]></title>
+    <url>%2F2019%2F05%2F03%2F%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%2FBuck%2CBoost%2CBuck_Boost%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[SIMPLIS仿真Buck Buck工作原理 Boost工作原理 Buck_Boost工作原理]]></content>
+      <categories>
+        <category>电路原理</category>
+      </categories>
+      <tags>
+        <tag>Buck</tag>
+        <tag>Boost</tag>
+        <tag>Buck_Boost</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SIMPLIS 仿真开环Buck和POP分析]]></title>
     <url>%2F2019%2F02%2F24%2FSIMetrix%E4%BB%BF%E7%9C%9F%2FSIMPLIS%20%E4%BB%BF%E7%9C%9F%E5%BC%80%E7%8E%AFBuck%E5%92%8CPOP%E5%88%86%E6%9E%90%2F</url>
     <content type="text"><![CDATA[SIMPLIS 仿真开环Buck和POP分析实际上SIMetrix/SIMLIS包含SIMetrix和SIMLIS两个仿真内核，SIMetrix是用的PSPICE内核，而SIMLIS是一个基于分段线性元件建立的内核，所以速度更快，可以直接找到开关电路的稳定工作点，可以不用平均模型，直接从原理图上得到传递函数。 SIMPLIS 仿真开环Buck1.新建SIMPLIS Schematic并放置器件和设置器件参数。2.运行结果如下。 SIMPLIS POP分析POP分析(period operating point)是一种快速确定开关电源稳态工作的算法。如果不想看稳定的过程，直接看稳定后的结果，并且要得到VFB对输出的波特图，就要借助POP分析。首先要加入一个POP Trigger,就是图中的X1,必须加在有周期性信号的地方，比如图中的三角波发生器。要看波特图，要加入AC source（图中的V4）和波特图观察器（在Probe AC/Noise菜单可以找到）。1.新建SIMPLIS Schematic并放置器件和设置器件参数。2.POP Trigger 的放置参考下图红色框的提示。3.在分析设置对话框中设置POP分析的参数，按下图勾选，Max.period时间要大于开关周期时间，比如本例开关频率为100K（V2的频率）,那么这个数就要大于10u,这里取50u。3.运行结果如下。]]></content>
